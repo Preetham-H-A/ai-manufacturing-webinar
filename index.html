@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Register for AI on the Factory Floor, a practical webinar on AI for Manufacturing.">
+<title>AI on the Factory Floor | Manufacturing Webinar</title>
+<style>
+:root{--navy:#081a2b;--navy2:#102b43;--cyan:#51e0d0;--lime:#c8f169;--ink:#102235;--muted:#5e7082;--paper:#f4f7f8;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;color:white}
+.brand{font-weight:800;letter-spacing:.02em;display:flex;align-items:center;gap:10px}.brand-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),var(--lime));display:grid;place-items:center;color:var(--navy);font-weight:900}
+.navlinks{display:flex;gap:28px;color:#c7d4df;font-size:14px}.navlinks a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:9px;background:var(--lime);color:#102235;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #c8f16933}.btn-outline{background:transparent;border:1px solid #688096;color:white}
+.hero{background:radial-gradient(circle at 78% 35%,#1c5260 0,#102b43 27%,#081a2b 68%);color:white;overflow:hidden;padding-bottom:88px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center;padding:64px 0 30px}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 5px #c8f16922}
+h1{font-size:clamp(42px,5.7vw,68px);line-height:1.02;letter-spacing:-.055em;margin:20px 0}.hero h1 span{color:var(--cyan)}.lead{font-size:18px;color:#c4d2de;max-width:590px;margin:0 0 28px}
+.meta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.meta div{border:1px solid #ffffff25;background:#ffffff0b;border-radius:10px;padding:12px 15px;min-width:145px}.meta small{display:block;color:#8fa7b9;font-size:11px;text-transform:uppercase;letter-spacing:.1em}.meta strong{font-size:14px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.fine{font-size:12px;color:#8fa7b9;margin-top:15px}
+.visual{position:relative;min-height:430px;display:grid;place-items:center}.orbit{position:absolute;width:360px;height:360px;border:1px solid #51e0d044;border-radius:50%;box-shadow:0 0 80px #51e0d011}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #51e0d033;border-radius:50%;inset:32px}.orbit:after{inset:70px}
+.factory-card{position:relative;width:min(390px,100%);padding:24px;border:1px solid #ffffff27;border-radius:22px;background:linear-gradient(145deg,#173d54ee,#0d263bee);box-shadow:0 25px 80px #0006;transform:rotate(-3deg)}
+.factory-top{display:flex;justify-content:space-between;color:#a7bdca;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.live{color:var(--lime)}.machine{height:165px;margin:22px 0;background:linear-gradient(180deg,#143d4d,#0b2438);border-radius:15px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.machine svg{width:90%;height:90%}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stat{background:#ffffff0c;border-radius:10px;padding:11px}.stat b{display:block;color:var(--cyan);font-size:20px}.stat span{font-size:10px;color:#9eb3c2}
+.signal{position:absolute;background:white;color:var(--ink);padding:12px 15px;border-radius:12px;box-shadow:0 15px 35px #0003;font-size:12px;font-weight:700}.signal.one{top:36px;right:-5px}.signal.two{bottom:28px;left:-10px}.signal em{font-style:normal;color:#139d8d}
+section{padding:82px 0}.section-head{max-width:650px;margin-bottom:38px}.kicker{color:#168e85;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:900}.section-head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.section-head p{color:var(--muted);font-size:16px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pillar{background:white;border:1px solid #e3eaed;border-radius:16px;padding:25px;box-shadow:0 10px 30px #10223508}.icon{width:43px;height:43px;border-radius:12px;background:#e7faf6;display:grid;place-items:center;font-size:21px}.pillar h3{margin:17px 0 7px;font-size:18px}.pillar p{margin:0;color:var(--muted);font-size:14px}
+.agenda{background:#eaf0f2}.agenda-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.agenda-list{display:grid;gap:12px}.agenda-item{display:grid;grid-template-columns:100px 1fr;gap:18px;padding:18px;background:white;border-radius:12px;border:1px solid #dce6e9}.agenda-item time{font-size:12px;color:#168e85;font-weight:900}.agenda-item h3{font-size:16px;margin:0 0 4px}.agenda-item p{font-size:13px;color:var(--muted);margin:0}
+.speaker{display:grid;grid-template-columns:130px 1fr;gap:24px;align-items:center;background:var(--navy);color:white;padding:28px;border-radius:18px}.avatar{width:112px;height:112px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--lime));display:grid;place-items:center;color:var(--navy);font-size:34px;font-weight:900}.speaker h3{margin:0 0 4px;font-size:21px}.speaker p{color:#b6c8d4;margin:5px 0;font-size:14px}.speaker small{color:var(--cyan);font-weight:800}
+.register{background:var(--navy);color:white}.register-grid{display:grid;grid-template-columns:1fr .85fr;gap:60px;align-items:start}.register .section-head p{color:#b6c8d4}.form-card{background:white;color:var(--ink);padding:28px;border-radius:18px}.form-card h3{margin:0 0 5px;font-size:21px}.form-card>p{color:var(--muted);font-size:13px;margin:0 0 20px}.field{margin:14px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.field input,.field select{width:100%;padding:13px;border:1px solid #d8e1e5;border-radius:8px;font:inherit;font-size:14px;background:#fbfdfd}.field input:focus,.field select:focus{outline:2px solid #51e0d055;border-color:#168e85}.form-card .btn{width:100%;margin-top:8px;background:var(--navy);color:white}.success{display:none;padding:13px;background:#e7faf1;color:#126344;border-radius:9px;font-size:13px;margin-top:14px}
+footer{background:#061321;color:#8fa7b9;padding:25px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot strong{color:white}
+@media(max-width:800px){.navlinks{display:none}.hero-grid,.agenda-grid,.register-grid{grid-template-columns:1fr}.hero-grid{padding-top:42px}.visual{min-height:360px}.orbit{width:300px;height:300px}.pillars{grid-template-columns:1fr}.agenda-grid{gap:28px}.hero{padding-bottom:60px}section{padding:60px 0}}
+@media(max-width:480px){.meta div{flex:1;min-width:125px}.signal.one{right:0}.signal.two{left:0}.speaker{grid-template-columns:1fr;text-align:center}.avatar{margin:auto}.agenda-item{grid-template-columns:1fr;gap:5px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#"><span class="brand-mark">AI</span> INDUSTRY FORWARD</a>
+      <div class="navlinks"><a href="#why">Why attend</a><a href="#agenda">Agenda</a><a href="#speaker">Speaker</a></div>
+      <a class="btn" href="#register">Save my seat</a>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Live expert webinar · For manufacturing leaders</div>
+        <h1>Make your factory <span>think ahead.</span></h1>
+        <p class="lead">Discover how practical AI can help manufacturers predict equipment failures, improve quality, optimize operations and turn shop-floor data into smarter decisions.</p>
+        <div class="meta">
+          <div><small>Date</small><strong>Thursday, 10 December 2026</strong></div>
+          <div><small>Time</small><strong>4:00 – 5:15 PM IST</strong></div>
+          <div><small>Format</small><strong>Live online · Free</strong></div>
+        </div>
+        <div class="hero-actions"><a class="btn" href="#register">Register for free →</a><a class="btn btn-outline" href="#agenda">Explore the agenda</a></div>
+        <p class="fine">75 minutes of practical insights, real-world use cases and live Q&A.</p>
+      </div>
+      <div class="visual" aria-label="Illustration of an AI-enabled smart factory dashboard">
+        <div class="orbit"></div>
+        <div class="factory-card">
+          <div class="factory-top"><span>Smart factory / live view</span><span class="live">● SYSTEM ACTIVE</span></div>
+          <div class="machine">
+            <svg viewBox="0 0 360 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 140H335" stroke="#51E0D0" stroke-width="2" opacity=".5"/>
+              <rect x="48" y="68" width="95" height="72" rx="8" fill="#1D6170" stroke="#51E0D0" stroke-width="2"/>
+              <rect x="66" y="42" width="58" height="26" rx="5" fill="#C8F169"/>
+              <circle cx="95" cy="104" r="19" stroke="#C8F169" stroke-width="5"/>
+              <path d="M95 85V123M76 104H114" stroke="#C8F169" stroke-width="3"/>
+              <rect x="166" y="86" width="130" height="54" rx="7" fill="#16465C" stroke="#51E0D0" stroke-width="2"/>
+              <path d="M185 86V54H218V86M234 86V35H270V86" stroke="#51E0D0" stroke-width="5"/>
+              <path d="M185 112L205 98L224 116L246 96L267 107L284 91" stroke="#C8F169" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="284" cy="91" r="5" fill="#C8F169"/>
+              <path d="M32 150H328" stroke="#C8F169" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="stats"><div class="stat"><b>24/7</b><span>Condition monitoring</span></div><div class="stat"><b>AI</b><span>Quality insights</span></div><div class="stat"><b>Live</b><span>Decision support</span></div></div>
+        </div>
+        <div class="signal one">⚙ Predictive maintenance <em>↗</em></div>
+        <div class="signal two">✓ Data-driven quality control</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">The opportunity</div><h2>From reactive operations to intelligent manufacturing.</h2><p>AI is moving beyond experimentation. Learn where it can create measurable value across the manufacturing lifecycle—and what it takes to get started.</p></div>
+    <div class="pillars">
+      <article class="pillar"><div class="icon">🛠️</div><h3>Predict downtime</h3><p>Use equipment and sensor data to identify early warning signs and plan maintenance before failures disrupt production.</p></article>
+      <article class="pillar"><div class="icon">🔍</div><h3>Improve quality</h3><p>Explore computer vision and anomaly detection to spot defects consistently and reduce avoidable rework.</p></article>
+      <article class="pillar"><div class="icon">📈</div><h3>Optimize performance</h3><p>Turn production, energy and supply-chain data into forecasts and actionable operational recommendations.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="agenda" id="agenda">
+  <div class="wrap agenda-grid">
+    <div class="section-head"><div class="kicker">75-minute session</div><h2>A practical roadmap—not an AI hype show.</h2><p>Designed for plant managers, operations leaders, manufacturing engineers, quality teams and digital transformation professionals.</p><a class="btn" href="#register">Reserve your place →</a></div>
+    <div class="agenda-list">
+      <article class="agenda-item"><time>00–10 MIN</time><div><h3>AI in manufacturing: the landscape</h3><p>Where AI fits across the modern factory and what has changed.</p></div></article>
+      <article class="agenda-item"><time>10–25 MIN</time><div><h3>Predictive maintenance in action</h3><p>Sensor signals, anomaly detection and maintenance planning.</p></div></article>
+      <article class="agenda-item"><time>25–40 MIN</time><div><h3>Computer vision for quality</h3><p>Visual inspection, defect detection and human-in-the-loop review.</p></div></article>
+      <article class="agenda-item"><time>40–55 MIN</time><div><h3>From pilot to production</h3><p>Data readiness, integration, cybersecurity, ROI and adoption.</p></div></article>
+      <article class="agenda-item"><time>55–75 MIN</time><div><h3>Live Q&A + next steps</h3><p>Bring your manufacturing challenge and leave with a starting point.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="speaker">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Your session host</div><h2>Learn from someone who understands the factory floor.</h2></div>
+    <div class="speaker">
+      <div class="avatar">AK</div>
+      <div><small>FEATURED SPEAKER</small><h3>Arjun Kumar</h3><p><strong>Director, Industrial AI & Digital Operations</strong></p><p>Arjun works with manufacturing teams to translate industrial data into practical AI solutions, with a focus on reliability, quality systems and responsible deployment. He brings a practitioner’s perspective on moving from proof-of-concept to measurable business outcomes.</p></div>
+    </div>
+    <p style="font-size:11px;color:#718392;margin-top:12px">Speaker profile and event details are illustrative placeholders created for this sample campaign.</p>
+  </div>
+</section>
+
+<section class="register" id="register">
+  <div class="wrap register-grid">
+    <div class="section-head"><div class="kicker" style="color:var(--lime)">Your next move</div><h2>Build a smarter manufacturing future.</h2><p>Join the conversation. Get practical ideas you can take back to your team, plus a post-session resource summary.</p><p style="color:#c8f169;font-weight:800">Thursday, 10 December 2026 · 4:00 PM IST</p></div>
+    <form class="form-card" id="registrationForm">
+      <h3>Reserve your free seat</h3><p>Complete the form to register your interest.</p>
+      <div class="field"><label for="name">Full name</label><input id="name" name="name" placeholder="Your name" required></div>
+      <div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" placeholder="you@company.com" required></div>
+      <div class="field"><label for="role">Your role</label><select id="role" name="role" required><option value="">Select your role</option><option>Plant / Operations Manager</option><option>Manufacturing / Process Engineer</option><option>Quality / Maintenance</option><option>IT / Data / AI</option><option>Business Leader</option><option>Student / Other</option></select></div>
+      <button class="btn" type="submit">Register for the webinar →</button>
+      <div class="success" id="successMessage" role="status">Thanks! Your details have been captured in this demo. Connect a backend or form service to receive real registrations.</div>
+      <p style="font-size:10px;color:#82919b;margin:12px 0 0">Demo form: no personal data is transmitted or stored.</p>
+    </form>
+  </div>
+</section>
+<footer><div class="wrap foot"><div><strong>INDUSTRY FORWARD</strong> · AI on the Factory Floor</div><div>Practical AI. Better operations. Smarter decisions.</div><div>© 2026 · Concept landing page</div></div></footer>
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!this.reportValidity()) return;
+  document.getElementById('successMessage').style.display='block';
+  this.querySelector('button').textContent='Interest registered ✓';
+});
+</script>
+</body>
+</html>
